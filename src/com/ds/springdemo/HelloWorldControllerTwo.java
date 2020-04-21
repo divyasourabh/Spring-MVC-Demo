@@ -7,8 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+@RequestMapping("/controllerTwo")
 @Controller
-public class HelloWorldController {
+public class HelloWorldControllerTwo {
 
 	@RequestMapping("/showForm")
 	public String showForm() {
@@ -46,7 +47,7 @@ public class HelloWorldController {
 		
 		name = name.toUpperCase();
 		
-		String result = "Hey controller Only ! " + name;
+		String result = "Hey controllerTwo ! " + name;
 		
 		model.addAttribute("message",result);
 		
