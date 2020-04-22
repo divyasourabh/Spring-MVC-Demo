@@ -40,6 +40,19 @@
 		Java <form:radiobutton path="favoriteLanguage" value="Java" />
 		C# <form:radiobutton path="favoriteLanguage" value="C#" />
 		Kotlin <form:radiobutton path="favoriteLanguage" value="Kotlin" />
+
+		<!-- Load Radio Options from JAVA Files  -->
+		<%-- <form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"  /> --%>
+
+
+		<br>
+		<br>
+		
+		Operating System Knows:
+		Linux <form:checkbox path="operatingSystems" value="Linux" />
+		Windows <form:checkbox path="operatingSystems" value="Windows" />
+		Mac OS <form:checkbox path="operatingSystems" value="Mac OS" />
+		
 		
 		<br>
 		<br>
