@@ -19,13 +19,13 @@
 		<br>
 	Country:
 		<form:select path="country">
-		
-		<!-- FETCH COUNTRY FROM PROPERTIES FILE  -->
-		 <form:options items="${countryOptions}" />
-		
-		<!-- FETCH FROM STUDENT JAVA CLASS-->
+
+			<!-- FETCH COUNTRY FROM PROPERTIES FILE  -->
+			<form:options items="${countryOptions}" />
+
+			<!-- FETCH FROM STUDENT JAVA CLASS-->
 			<%-- <form:options items="${student.countryOptions}" /> --%>
-			
+
 			<!-- HARD CODED -->
 			<%-- <form:option value="Germany" label="Germany" />
 			<form:option value="USA" label="USA" />
@@ -34,6 +34,16 @@
 		</form:select>
 		<br>
 		<br>
+		
+		Favorite Language:
+		
+		Java <form:radiobutton path="favoriteLanguage" value="Java" />
+		C# <form:radiobutton path="favoriteLanguage" value="C#" />
+		Kotlin <form:radiobutton path="favoriteLanguage" value="Kotlin" />
+		
+		<br>
+		<br>
+		
 		<input type="submit" value="Submit">
 
 
