@@ -2,17 +2,16 @@
 <html>
 
 <body>
-Hello World of Spring!
+	Hello World of Spring!
+	<img alt="LoGo"
+		src="${pageContext.request.contextPath}/resources/images/spring-logo.png">
 
-<img alt="LoGo" src="${pageContext.request.contextPath}/resources/images/spring-logo.png"> 
+	<br>
+	<br> Student Name: ${param.studentName}
 
-<br><br>
+	<br>
+	<br> The Message: ${message}
 
-Student Name: ${param.studentName}
-
-<br><br>
-
-The Message: ${message} 
 
 </body>
 </html>
