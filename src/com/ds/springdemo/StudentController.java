@@ -1,5 +1,8 @@
 package com.ds.springdemo;
 
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,6 +19,9 @@ public class StudentController {
 		
 		theModel.addAttribute("student",student);
 		
+	    // add the country options to the model 
+	    theModel.addAttribute("countryOptions", countryOptions); 
+		
 		return "student-form";
 	}
 
@@ -27,4 +33,7 @@ public class StudentController {
 		
 		return "student-confirmation";
 	}
+	
+	@Value("#{countryOptions}") 
+	private Map<String, String> countryOptions;
 }

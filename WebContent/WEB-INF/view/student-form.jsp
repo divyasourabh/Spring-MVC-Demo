@@ -18,16 +18,20 @@
 		<br>
 		<br>
 	Country:
-	
-	<form:select path="country">
-
-			<form:option value="India" label="India" />
-			<form:option value="Germany" label="Germany" />
+		<form:select path="country">
+		
+		<!-- FETCH COUNTRY FROM PROPERTIES FILE  -->
+		 <form:options items="${countryOptions}" />
+		
+		<!-- FETCH FROM STUDENT JAVA CLASS-->
+			<%-- <form:options items="${student.countryOptions}" /> --%>
+			
+			<!-- HARD CODED -->
+			<%-- <form:option value="Germany" label="Germany" />
 			<form:option value="USA" label="USA" />
-			<form:option value="Canada" label="Canada" />
+			<form:option value="Canada" label="Canada" /> --%>
 
 		</form:select>
-
 		<br>
 		<br>
 		<input type="submit" value="Submit">
